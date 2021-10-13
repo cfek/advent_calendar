@@ -20,7 +20,7 @@ $(function () {
       if (localStorage.getItem($(this).attr('id')) === "1") {
         var imgUrl = "";
         $.ajax({
-          url: "http://localhost/drupal/web/api/content/" + path + "?_format=json",
+          url: "api/content/" + path + "?_format=json",
           async: false,
           dataType: 'json',
           success: function (json_data) {
