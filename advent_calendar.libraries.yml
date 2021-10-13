@@ -1,0 +1,7 @@
+advent_calendar_library:
+  version: 1.x
+  header: true
+  js:
+    js/advent_calendar.js: {}
+  dependencies:
+    - core/jquery

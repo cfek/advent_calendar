@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function advent_calendar_views_pre_render(ViewExecutable $view) {
+ if (isset($view) && ($view->storage->id() == 'calendar')) {
+   $view->element['#attached']['library'][] = 'advent_calendar/advent_calendar_library';
+ }
+
+
+}
+
